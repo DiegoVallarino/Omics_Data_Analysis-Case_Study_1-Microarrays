@@ -141,7 +141,7 @@ Although the targets file need not have any fixed names it is practical to use i
 For this analysis, targets file has been saved in .csv format, separated by semicolon, although any other format that works for delimited text files might have been used (see Note 2). Table \@ref(tab:ReadTargets) shows the contents of the targets file used in this analysis.
 
 ```{r ReadTargets}
-targets <- read.csv2("./data/targets.csv", header = TRUE, sep = ";") 
+targets <- read.csv2("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/data/targets.csv", header = TRUE, sep = ";") 
 knitr::kable(
   targets, booktabs = TRUE,
   caption = 'Content of the targets file used for the current analysis')
@@ -182,8 +182,7 @@ BiocManager::install("arrayQualityMetrics")
 BiocManager::install("pvca")
 # NOT NEEDED UNTIL ANALYSES ARE PERFORMED
 BiocManager::install("limma")
-BiocManager::install("genefilter")
-BiocManager::install("mogene21sttranscriptcluster.db")
+a
 BiocManager::install("annotate")
 BiocManager::install("org.Mm.eg.db")
 BiocManager::install("ReactomePA")
@@ -196,9 +195,9 @@ Next step is to read the raw data (CEL files) and to store in a variable (in thi
 
 ```{r ReadCELfiles, message=FALSE, results='hide', warning=FALSE}
 library(oligo)
-celFiles <- list.celfiles("./data", full.names = TRUE)
+celFiles <- list.celfiles("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/data", full.names = TRUE)
 library(Biobase)
-my.targets <-read.AnnotatedDataFrame(file.path("./data","targets.csv"), 
+my.targets <-read.AnnotatedDataFrame(file.path("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/data","targets.csv"), 
                                      header = TRUE, row.names = 1, 
                                      sep=";") 
 rawData <- read.celfiles(celFiles, phenoData = my.targets)
