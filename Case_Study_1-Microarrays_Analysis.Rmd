@@ -294,7 +294,7 @@ eset_rma <- rma(rawData)
 After performing normalization it is interesting to perform again a quality control to check how data looks. In the same way than before (look we have changed _rawData_ object to *eset_rma*).
 
 ```{r QCNorm, message=FALSE, warning=FALSE, eval=FALSE}
-arrayQualityMetrics(eset_rma, outdir = file.path("./results", "QCDir.Norm"), force=TRUE)
+arrayQualityMetrics(eset_rma, outdir = file.path("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/results", "QCDir.Norm"), force=TRUE)
 ```
 
 Figure \@ref(fig:QCNormDataRes) shows the same summary as before, but performed on normalized data.
