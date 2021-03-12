@@ -1,6 +1,6 @@
 ---
 title: "Statistical Analysis of Microarray data"
-author: "Based on Gonzalo, Ricardo and Sanchez-Pla, Alex (2019)"
+author: "Diego Vallarino - Based on Gonzalo, Ricardo and Sanchez-Pla, Alex (2019)"
 date: "March 29, 2020"
 output:
  prettydoc::html_pretty:
