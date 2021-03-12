@@ -176,6 +176,7 @@ install.packages("htmlTable")
 install.packages("prettydoc")
 install.packages("devtools")
 install.packages("BiocManager")
+install.packages("ggnewscale")
 BiocManager::install("oligo")
 BiocManager::install("pd.mogene.2.1.st")
 BiocManager::install("arrayQualityMetrics")
@@ -717,7 +718,7 @@ The Biological significance analysis will be applied only to the first two lists
 
 ```{r BiologicalSig}
 library(ReactomePA)
-
+library(ggnewscale)
 listOfData <- listOfSelected[1:2]
 comparisonsNames <- names(listOfData)
 universe <- mapped_genes
