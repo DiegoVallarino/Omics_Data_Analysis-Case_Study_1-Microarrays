@@ -180,9 +180,7 @@ BiocManager::install("oligo")
 BiocManager::install("pd.mogene.2.1.st")
 BiocManager::install("arrayQualityMetrics")
 BiocManager::install("pvca")
-# NOT NEEDED UNTIL ANALYSES ARE PERFORMED
 BiocManager::install("limma")
-a
 BiocManager::install("annotate")
 BiocManager::install("org.Mm.eg.db")
 BiocManager::install("ReactomePA")
