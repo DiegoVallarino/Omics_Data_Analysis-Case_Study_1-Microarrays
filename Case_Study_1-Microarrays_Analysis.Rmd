@@ -3,20 +3,21 @@ title: "Statistical Analysis of Microarray data"
 author: "Diego Vallarino based on Gonzalo, Ricardo and Sanchez-Pla, Alex (2019)"
 date: "March 15, 2020"
 output:
-  pdf_document:
-    latex_engine: xelatex
+  html_document:
     toc: yes
-    toc_depth: 2
-    number_sections: yes
+    toc_depth: '2'
+    df_print: paged
+    toc_float: true
   prettydoc::html_pretty:
     toc: yes
     theme: cayman
     highlight: github
     number_sections: yes
-  html_document:
+  pdf_document:
+    latex_engine: xelatex
     toc: yes
-    toc_depth: '2'
-    df_print: paged
+    toc_depth: 2
+    number_sections: yes
 editor_options:
   chunk_output_type: console
 bibliography: references.bib
