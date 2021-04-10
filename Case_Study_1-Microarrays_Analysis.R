@@ -70,9 +70,9 @@ knitr::kable(
 
 ## ----ReadCELfiles, message=FALSE, results='hide', warning=FALSE------------------------------------
 library(oligo)
-celFiles <- list.celfiles("./data", full.names = TRUE)
+celFiles <- list.celfiles("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/data", full.names = TRUE)
 library(Biobase)
-my.targets <-read.AnnotatedDataFrame(file.path("./data","targets.csv"), 
+my.targets <-read.AnnotatedDataFrame(file.path("C:/Users/diego/OneDrive/Documentos/GitHub/Omics_Data_Analysis-Case_Study_1-Microarrays/data","targets.csv"), 
                                      header = TRUE, row.names = 1, 
                                      sep=";") 
 rawData <- read.celfiles(celFiles, phenoData = my.targets)
